@@ -1,0 +1,28 @@
+{
+  "extends": "airbnb",
+  "globals": {
+    "document": true,
+    "window": true,
+    "IN": true
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y"
+  ],
+  "rules": {
+    "new-cap": ["error", { "newIsCapExceptions": ["fromJS", "modalClass"] }],
+    "import/prefer-default-export": 0,
+    "react/jsx-filename-extension": 0,
+    "max-len": ["error", { "code": 180 }],
+    "import/no-named-as-default-member": 0,
+    "import/no-named-as-default": 0,
+    "react/forbid-prop-types": 0,
+    "jsx-a11y/aria-props": 2,
+    "jsx-a11y/heading-has-content": 0,
+    "jsx-a11y/label-has-for": 2,
+    "jsx-a11y/mouse-events-have-key-events": 2,
+    "jsx-a11y/role-has-required-aria-props": 2,
+    "jsx-a11y/role-supports-aria-props": 2,
+    "jsx-a11y/anchor-is-valid": 0
+  }
+}

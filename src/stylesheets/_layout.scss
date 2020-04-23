@@ -1,0 +1,160 @@
+//Layout style
+.layout {
+  &-header {
+    &_left {
+      width: 212px;
+      padding: 16px;
+      line-height: 32px;
+    }
+    &_main {
+      line-height: 32px;
+      padding: 16px 22px 16px 25px;
+      .input-search {
+        float: left;
+      }
+    }
+  }
+  &-body {
+    &_left {
+      width: 212px;
+    }
+    &_right {
+      width: 209px;
+      &.direct-detail {
+        width: 297px;
+        padding: 32px 22px;
+      }
+    }
+    &_middle {
+    }
+  }
+  &-marker {
+    .order-2 {
+      order: 3 !important;
+    }
+    .order-3 {
+      width: 520px;
+      order: 2 !important;
+    }
+  }
+}
+
+//Header room selected
+.room-selected {
+  .avatar {
+    margin-right: 18px;
+  }
+  .dropdown {
+    display: inline-block;
+  }
+}
+
+.right-menu {
+  &_ipad {
+    padding-right: 30px;
+    cursor: pointer;
+  }
+  &_mobile {
+    padding-right: 30px;
+    cursor: pointer;
+  }
+  .list-action {
+    display: inline-block;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 20px;
+      background-color: #4c515f;
+      top: 6px;
+      right: -14px;
+    }
+  }
+  .dropdown {
+    display: inline-block;
+    margin-left: 30px;
+  }
+}
+
+.wrap-market {
+  padding: 28px 33px;
+  > div {
+    float: left;
+    & + div {
+      margin-left: 28px;
+    }
+  }
+}
+
+//header selected ipad
+.ipad-selected,
+.order-ipad {
+  width: 270px;
+}
+
+.ipad-selected {
+  padding-left: 28px;
+}
+
+.order-ipad {
+  padding: 27px 26px 0px 32px;
+  .rectangle-item {
+    padding-bottom: 26px;
+  }
+}
+
+.ipad-menu {
+  cursor: pointer;
+}
+
+.sign-in {
+  width: 32px;
+  font-family: 'Avenir';
+  font-size: 10px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #5a5e66;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+//tabs market mobile
+.tabs-custom {
+  // .nav-link
+  .list-action {
+    text-align: center;
+    padding: 14px 0px;
+    .list-inline-item {
+      border: none;
+      border-top-left-radius: none;
+      border-top-right-radius: none;
+      font-family: 'Avenir';
+      font-size: 14px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #9da1b3;
+      cursor: pointer;
+      &.active {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.mobile-selected {
+  padding-left: 28px;
+  width: 100px;
+}
+
+.layout-mobile {
+  .room-selected .avatar {
+    margin-right: 7px;
+  }
+}

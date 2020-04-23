@@ -1,0 +1,172 @@
+// Custom theme for bootstrap template
+
+// ================================ List group ================================
+
+.list-group {
+  .list-group-item {
+    height: 34px;
+    padding-right: 10px;
+    cursor: pointer;
+    .image {
+      height: 24px;
+      width: 24px;
+      padding-top: 5px;
+      display: inherit;
+    }
+    .name {
+      line-height: 24px;
+      padding-top: 1px;
+    }
+    .badge {
+      padding: 8px 5px;
+      font-family: $font-family-avenir-medium;
+      font-size: 10px;
+    }
+  }
+}
+
+.list-group-style1 {
+  font-size: 14px;
+  .list-group-item {
+    &.active {
+      position: relative;
+      font-family: $font-family-avenir-medium;
+      background-color: #35393f;
+      &:before {
+        content: '';
+        width: 6px;
+        height: 100%;
+        background-color: $primary;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+.list-group-style2 {
+  font-size: 14px;
+  .list-group-item {
+    color: #9da1b3;
+    &.active {
+      background-color: transparent;
+      color: #e7e7e7;
+      font-family: $font-family-avenir-medium;
+    }
+  }
+
+  &.light {
+    .list-group-item {
+      color: #e7e7e7;
+    }
+  }
+}
+
+// Avatar
+.avatar {
+  border-radius: 50%;
+  &.small {
+    width: 15px;
+    height: 15px;
+  }
+  &.medium {
+    width: 22px;
+    height: 22px;
+  }
+  &.large {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+// ================================ Input search ================================
+
+.input-search {
+  background-color: #4c5057;
+  border-radius: 4px;
+  width: 212px;
+
+  .input-group-text {
+    border: none;
+    background-color: transparent;
+  }
+  .form-control {
+    border: none;
+    background-color: transparent;
+    font-family: $font-family-avenir-book;
+    font-size: 12px;
+    padding-left: 0;
+    height: 32px;
+    color: #fff;
+    &:active,
+    &:focus {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+// ================================ DropDown ================================
+
+.dropdown-style1 {
+  .dropdown-toggle {
+    position: relative;
+    &:after {
+      content: '\F107';
+      border: none;
+      font-family: 'FontAwesome';
+      width: 20px;
+      height: 20px;
+      font-size: 20px;
+      position: absolute;
+      margin-left: 14px;
+    }
+  }
+}
+
+.dropdown-style2 {
+  .dropdown-toggle {
+    position: relative;
+    &:after {
+      content: '\F107';
+      border: none;
+      font-family: 'FontAwesome';
+      width: 20px;
+      font-size: 14px;
+      height: 20px;
+      top: 2px;
+      position: absolute;
+      margin-left: 5px;
+    }
+  }
+  .dropdown-menu {
+    right: -80px !important;
+    left: auto !important;
+  }
+}
+
+// ================================ List ================================
+
+.list-action {
+  margin-bottom: 0;
+}
+
+// ================================ Card ================================
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-title {
+  padding: 24px 16px 10px;
+  font-size: 16px;
+}
+
+.card-style1 {
+  .card-title {
+    font-family: $font-family-sans-serif;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,45 @@
+//item right
+.detail-item {
+  .image,
+  .name {
+    width: 40px;
+    height: 40px;
+    img {
+      width: 100%;
+    }
+  }
+  .name {
+    line-height: 40px;
+    padding-left: 12px;
+    width: 178px;
+    text-overflow: ellipsis;
+  }
+
+  &_text {
+    padding-top: 23px;
+    .text {
+      height: 22px;
+      font-family: 'Avenir';
+      font-size: 16px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+      margin-bottom: 14px;
+    }
+    &_content {
+      border-top: 1px solid #4c515f;
+      padding-top: 19px;
+      font-family: 'Avenir';
+      font-size: 16px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #9da1b3;
+    }
+  }
+}
